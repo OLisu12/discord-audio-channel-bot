@@ -48,8 +48,8 @@ def transcribe_audio(way_bytes):
     return text.strip()
 
 
-@bot.slash_command(name="qwerqwerqwer", description="enter audio channel")
-async def qwerqwerqwer(ctx: discord.ApplicationContext):
+@bot.slash_command(name="start", description="enter audio channel")
+async def start(ctx: discord.ApplicationContext):
     if ctx.author.voice is None:
         await ctx.respond("please enter audio channel")
         return
